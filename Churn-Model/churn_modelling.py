@@ -42,5 +42,5 @@ if int(accuracy) > 0.85:
 
 else:
 
-     print('accuracy is: ',accuracy)
+     print('accuracy is: ',accuracy*100)
      os.system('curl --user admin:redhat https://192.168.43.57/job/Mt3_job4/build?token=failure')

@@ -14,4 +14,4 @@ RUN pip install scikit-learn \
     keras \
     tensorflow
 
-CMD ["/bin/sh","-c"," python3 $(ls | grep py) "]
+#CMD ["/bin/sh","-c"," python3 $(ls | grep py) "]

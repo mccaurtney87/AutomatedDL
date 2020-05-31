@@ -35,7 +35,7 @@ accuracy = acc.history['accuracy'][-1]
 
 import os
 
-if int(accuracy) > 0.85:
+if accuracy > 0.85:
 
      print('accuracy is: ',accuracy*100)
      os.system('curl --user admin:b@8788 http://192.168.43.57:8080/job/Mt3_job3/build?token=success')

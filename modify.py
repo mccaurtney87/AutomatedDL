@@ -5,7 +5,7 @@ for file in os.listdir('/AutomatedDL/Churn-Model'):
         print(
 print('Modifying file : ',myfile )
 
-f = open('Churn-Model/'+myfile,"r")
+f= open('Churn-Model/'+myfile,"r")
 filedata = f.read()
 f.close()
 
@@ -14,6 +14,6 @@ newdata = newdata.split("\n")
 newdata.insert(25,"model.add(Dense(units=16,activation='relu'))")
 newdata = "\n".join(newdata)
 
-f = open('Churn-Model/'+myfile,"w")
+f= open('Churn-Model/'+myfile,"w")
 f.write(newdata)
 f.close()

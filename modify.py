@@ -2,7 +2,6 @@ import os
 for file in os.listdir('/AutomatedDL/Churn-Model'):
     if file.endswith('.py'):
         myfile = file
-        print(
 print('Modifying file : ',myfile )
 
 f= open('Churn-Model/'+myfile,"r")

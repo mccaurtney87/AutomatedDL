@@ -5,7 +5,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.optimizers import RMSprop
 
-dt = pd.read_csv(r'C:\Users\Rishabh\Downloads\Churn_Modelling.csv')
+dt = pd.read_csv('Churn_Modelling.csv')
 
 y = dt['Exited']
 dt.columns
